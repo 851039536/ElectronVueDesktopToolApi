@@ -1,0 +1,350 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Web.Core\\ElectronVueDesktopToolApi.Web.Core.csproj": {}
+  },
+  "projects": {
+    "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Application\\ElectronVueDesktopToolApi.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Application\\ElectronVueDesktopToolApi.Application.csproj",
+        "projectName": "ElectronVueDesktopToolApi.Application",
+        "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Application\\ElectronVueDesktopToolApi.Application.csproj",
+        "packagesPath": "C:\\Users\\ch190006\\.nuget\\packages\\",
+        "outputPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\2022\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ch190006\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Core\\ElectronVueDesktopToolApi.Core.csproj": {
+                "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Core\\ElectronVueDesktopToolApi.Core.csproj"
+              },
+              "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.EntityFramework.Core\\ElectronVueDesktopToolApi.EntityFramework.Core.csproj": {
+                "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.EntityFramework.Core\\ElectronVueDesktopToolApi.EntityFramework.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.3.23178.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Core\\ElectronVueDesktopToolApi.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Core\\ElectronVueDesktopToolApi.Core.csproj",
+        "projectName": "ElectronVueDesktopToolApi.Core",
+        "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Core\\ElectronVueDesktopToolApi.Core.csproj",
+        "packagesPath": "C:\\Users\\ch190006\\.nuget\\packages\\",
+        "outputPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\2022\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ch190006\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Furion": {
+              "target": "Package",
+              "version": "[4.8.8, )"
+            },
+            "Furion.Extras.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[4.8.8, )"
+            },
+            "Furion.Extras.ObjectMapper.Mapster": {
+              "target": "Package",
+              "version": "[4.8.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.3.23178.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Database.Migrations\\ElectronVueDesktopToolApi.Database.Migrations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Database.Migrations\\ElectronVueDesktopToolApi.Database.Migrations.csproj",
+        "projectName": "ElectronVueDesktopToolApi.Database.Migrations",
+        "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Database.Migrations\\ElectronVueDesktopToolApi.Database.Migrations.csproj",
+        "packagesPath": "C:\\Users\\ch190006\\.nuget\\packages\\",
+        "outputPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Database.Migrations\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\2022\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ch190006\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.EntityFramework.Core\\ElectronVueDesktopToolApi.EntityFramework.Core.csproj": {
+                "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.EntityFramework.Core\\ElectronVueDesktopToolApi.EntityFramework.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.3.23178.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.EntityFramework.Core\\ElectronVueDesktopToolApi.EntityFramework.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.EntityFramework.Core\\ElectronVueDesktopToolApi.EntityFramework.Core.csproj",
+        "projectName": "ElectronVueDesktopToolApi.EntityFramework.Core",
+        "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.EntityFramework.Core\\ElectronVueDesktopToolApi.EntityFramework.Core.csproj",
+        "packagesPath": "C:\\Users\\ch190006\\.nuget\\packages\\",
+        "outputPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.EntityFramework.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\2022\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ch190006\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Core\\ElectronVueDesktopToolApi.Core.csproj": {
+                "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Core\\ElectronVueDesktopToolApi.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.3.23178.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Web.Core\\ElectronVueDesktopToolApi.Web.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Web.Core\\ElectronVueDesktopToolApi.Web.Core.csproj",
+        "projectName": "ElectronVueDesktopToolApi.Web.Core",
+        "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Web.Core\\ElectronVueDesktopToolApi.Web.Core.csproj",
+        "packagesPath": "C:\\Users\\ch190006\\.nuget\\packages\\",
+        "outputPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Web.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\2022\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ch190006\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Application\\ElectronVueDesktopToolApi.Application.csproj": {
+                "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Application\\ElectronVueDesktopToolApi.Application.csproj"
+              },
+              "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Database.Migrations\\ElectronVueDesktopToolApi.Database.Migrations.csproj": {
+                "projectPath": "D:\\sw\\netCore\\ElectronVueDesktopToolApi\\ElectronVueDesktopToolApi.Database.Migrations\\ElectronVueDesktopToolApi.Database.Migrations.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.3.23178.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "T74WI4YCA5uF2bUxLJNO3x72T/MRm6IvPH8ZMGY40+0=",
+  "Source": "ElectronVueDesktopToolApi.Web.Entry",
+  "BasePath": "_content/ElectronVueDesktopToolApi.Web.Entry",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<NoWarn>1701;1702;1591</NoWarn>
+		<DocumentationFile>ElectronVueDesktopToolApi.Web.Core.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="ElectronVueDesktopToolApi.Web.Core.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ElectronVueDesktopToolApi.Application\ElectronVueDesktopToolApi.Application.csproj" />
+		<ProjectReference Include="..\ElectronVueDesktopToolApi.Database.Migrations\ElectronVueDesktopToolApi.Database.Migrations.csproj" />
+	</ItemGroup>
+
+</Project>
