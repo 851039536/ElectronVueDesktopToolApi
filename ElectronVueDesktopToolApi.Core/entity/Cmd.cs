@@ -19,6 +19,8 @@ public class Cmd : IEntity, IEntityTypeBuilder<Cmd>
     [Column("key_value")]
     public string KeyValue { get; set; }
 
+    public string Type { get; set; }
+
     public void Configure(EntityTypeBuilder<Cmd> entityBuilder,DbContext dbContext,Type dbContextLocator)
     {
         entityBuilder.HasKey(c => c.Id);

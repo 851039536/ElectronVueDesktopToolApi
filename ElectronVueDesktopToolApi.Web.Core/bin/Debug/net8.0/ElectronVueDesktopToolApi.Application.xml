@@ -4,21 +4,25 @@
         <name>ElectronVueDesktopToolApi.Application</name>
     </assembly>
     <members>
-        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.GetFyAsync(System.Int32,System.String,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.GetPaging(System.Int32,System.Int32,System.Int32)">
             <summary>
             分页查询
             </summary>
-            <param name="identity">所有:0 || 分类:1 || 用户:2 || 标签:3 || 用户-分类:4</param>
-            <param name="type">查询参数</param>
+            <param name="identity">所有:0 </param>
             <param name="pageIndex">当前页码</param>
             <param name="pageSize">每页记录条数</param>
-            <param name="isDesc">是否倒序[true/false]</param>
         </member>
-        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.GetById2(System.Int32)">
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.GetById(System.Int32)">
             <summary>
             主键查询
             </summary>
             <param name="id">文章id</param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.GetSum">
+            <summary>
+            总条数
+            </summary>
             <returns></returns>
         </member>
         <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.Insert(ElectronVueDesktopToolApi.EntityFramework.Core.entity.Cmd)">
@@ -74,15 +78,13 @@
             <param name="id">主键</param>
             <returns></returns>
         </member>
-        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.CmdService.GetFyAsync(System.Int32,System.String,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.CmdService.GetPagingAsync(System.Int32,System.Int32,System.Int32)">
             <summary>
             分页查询
             </summary>
-            <param name="identity">所有:0 || 分类:1 || 用户:2 || 标签:3 || 用户-分类:4</param>
-            <param name="type">查询参数</param>
+            <param name="identity">所有:0 </param>
             <param name="pageIndex">当前页码</param>
             <param name="pageSize">每页记录条数</param>
-            <param name="isDesc">是否倒序[true/false]</param>
         </member>
         <member name="T:ElectronVueDesktopToolApi.Application.SystemAppService">
             <summary>

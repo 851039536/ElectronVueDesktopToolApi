@@ -12,43 +12,43 @@
             service = new CmdService(this.repository);
         }
 
-        #region 分页查询GetFyAsync
+        #region 分页查询
         /// <summary>
         /// 分页查询
         /// </summary>
-        /// <param name="identity">所有:0 || 分类:1 || 用户:2 || 标签:3 || 用户-分类:4</param>
-        /// <param name="type">查询参数</param>
+        /// <param name="identity">所有:0 </param>
         /// <param name="pageIndex">当前页码</param>
         /// <param name="pageSize">每页记录条数</param>
-        /// <param name="isDesc">是否倒序[true/false]</param>
 
-        public async Task<PagedList<Cmd>> GetFyAsync(int identity = 0,string type = "null",int pageIndex = 1,int pageSize = 10,bool isDesc = true)
+        public async Task<PagedList<Cmd>> GetPaging(int identity = 0,int pageIndex = 1,int pageSize = 10)
         {
-
-            // 生成 token
-            //var accessToken = JWTEncryption.Encrypt(new Dictionary<string, object>()
-            //{
-            //    { "UserId", user.Id },  // 存储Id
-            //    { "Account",user.Account }, // 存储用户名
-            //});
-            return await service.GetFyAsync(identity,type,pageIndex,pageSize,isDesc);
+            return await service.GetPagingAsync(identity,pageIndex,pageSize);
         }
 
         #endregion
 
-        #region 主键查询 GetById
+        #region 主键查询 
         /// <summary>
         /// 主键查询
         /// </summary>
         /// <param name="id">文章id</param>
         /// <returns></returns>
-        public async Task<Cmd> GetById2(int id)
+        public async Task<Cmd> GetById(int id)
         {
             return await service.GetByIdAsync(id);
         }
         #endregion
 
-        
+        #region 查询总数 
+        /// <summary>
+        /// 总条数
+        /// </summary>
+        /// <returns></returns>
+        public async Task<int> GetSum()
+        {
+            return await service.GetSum();
+        }
+        #endregion
         public string GetToken(int id,string account)
         {
             // 生成 token

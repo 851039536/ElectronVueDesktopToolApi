@@ -26,7 +26,10 @@
                       .AsNoTracking()
                       .FirstOrDefaultAsync();
         }
-
+        public async Task<int> GetSum()
+        {
+            return await repository.CountAsync();
+        }
         /// <summary>
         /// 添加
         /// </summary>
@@ -53,17 +56,22 @@
         /// <summary>
         /// 分页查询
         /// </summary>
-        /// <param name="identity">所有:0 || 分类:1 || 用户:2 || 标签:3 || 用户-分类:4</param>
-        /// <param name="type">查询参数</param>
+        /// <param name="identity">所有:0 </param>
         /// <param name="pageIndex">当前页码</param>
         /// <param name="pageSize">每页记录条数</param>
-        /// <param name="isDesc">是否倒序[true/false]</param>
-        public async Task<PagedList<Cmd>> GetFyAsync(int identity,string type,int pageIndex,int pageSize,bool isDesc)
+        public async Task<PagedList<Cmd>> GetPagingAsync(int identity,int pageIndex,int pageSize)
         {
             PagedList<Cmd> entityList = default;
             switch (identity) {
                 case 0:
-                entityList = await GetFyAll(pageIndex,pageSize,isDesc);
+                //entityList = await GetFyAll(pageIndex,pageSize,isDesc);
+                entityList = await repository.Entities.OrderByDescending(e => e.Id)
+.Select(e => new Cmd() {
+    Id = e.Id,
+    Name = e.Name,
+    KeyValue = e.KeyValue,
+
+}).ToPagedListAsync(pageIndex,pageSize);
                 break;
             }
             return entityList;
