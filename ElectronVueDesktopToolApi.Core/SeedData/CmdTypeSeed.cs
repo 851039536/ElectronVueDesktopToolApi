@@ -10,7 +10,9 @@ namespace ElectronVueDesktopToolApi.Core.SeedData
         {
             return new List<CmdType>
             {
-                new CmdType { Id = 1, Name = "百小僧", Description="test",CmdId =1 },
+                new CmdType { Id = 1, Name = "常用", Description="描述" },
+                 new CmdType { Id = 2, Name = "电脑", Description="描述" },
+                  new CmdType { Id = 3, Name = "资源", Description="描述" },
             };
         }
     }

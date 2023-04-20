@@ -19,6 +19,7 @@ public class Cmd : IEntity, IEntityTypeBuilder<Cmd>
     [Comment("主键")]
     [Column(Order = 0,TypeName ="int(4)")]
     [Key]
+    [Range(1,9000,ErrorMessage = "Id 区间取值")]
     public int Id { get; set; }
 
     [Column(TypeName = "varchar(40)",Order =1)]
@@ -32,7 +33,6 @@ public class Cmd : IEntity, IEntityTypeBuilder<Cmd>
     [Column(TypeName = "int(3)",Order = 3)]
     [Comment("分类id")]
     public int TypeId { get; set; }
-
 
     /// <summary>
     /// 创建时间  表示这个属性的值将由数据库在插入时自动生成。
@@ -48,9 +48,7 @@ public class Cmd : IEntity, IEntityTypeBuilder<Cmd>
     [Column(Order = 5)]
     public DateTime UpdatedTime { get; set; }
 
-    public CmdType cmdType { get; set; } = null!;
-
-
+    public CmdType CmdType { get; set; } = null!;
 
 
 
@@ -74,7 +72,7 @@ public class Cmd : IEntity, IEntityTypeBuilder<Cmd>
         .HasDefaultValueSql("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
 
         //配置一对多关系(多)
-        entityBuilder.HasOne(d => d.cmdType)
+        entityBuilder.HasOne(d => d.CmdType)
              .WithMany(p => p.Cmds)
              .HasForeignKey(d => d.TypeId) //设置外键
              .IsRequired(); //外键不可为空

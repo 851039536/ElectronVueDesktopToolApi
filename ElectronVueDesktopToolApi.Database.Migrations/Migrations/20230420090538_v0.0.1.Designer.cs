@@ -3,6 +3,7 @@ using System;
 using ElectronVueDesktopToolApi.EntityFramework.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
 {
     [DbContext(typeof(DefaultDbContext))]
-    partial class DefaultDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230420090538_v0.0.1")]
+    partial class v001
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -99,45 +102,9 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         },
                         new
                         {
-                            Id = 14,
-                            CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "mstsc",
-                            Name = "远程桌面",
-                            TypeId = 1,
-                            UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 15,
-                            CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "regedit",
-                            Name = "注册表",
-                            TypeId = 1,
-                            UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 16,
-                            CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "control",
-                            Name = "控制面板",
-                            TypeId = 1,
-                            UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 17,
-                            CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "ncpa.cpl",
-                            Name = "网络",
-                            TypeId = 1,
-                            UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
                             Id = 4,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "shutdown -s -t 0",
+                            KeyValue = "taskmgr",
                             Name = "关机",
                             TypeId = 2,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -146,7 +113,7 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         {
                             Id = 5,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "shutdown -r -t 0",
+                            KeyValue = "taskmgr",
                             Name = "重启",
                             TypeId = 2,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -155,7 +122,7 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         {
                             Id = 6,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "shutdown -l -t 0",
+                            KeyValue = "taskmgr",
                             Name = "注销",
                             TypeId = 2,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -164,7 +131,7 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         {
                             Id = 7,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "shutdown -a",
+                            KeyValue = "taskmgr",
                             Name = "取消",
                             TypeId = 2,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -173,7 +140,7 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         {
                             Id = 8,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "explorer",
+                            KeyValue = "taskmgr",
                             Name = "资源管理",
                             TypeId = 3,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -182,7 +149,7 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         {
                             Id = 9,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "explorer C:\\\\",
+                            KeyValue = "taskmgr",
                             Name = "C盘",
                             TypeId = 3,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -191,7 +158,7 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         {
                             Id = 10,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "explorer D:\\\\",
+                            KeyValue = "taskmgr",
                             Name = "D盘",
                             TypeId = 3,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -200,7 +167,7 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         {
                             Id = 11,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "explorer shell:desktop",
+                            KeyValue = "taskmgr",
                             Name = "桌面",
                             TypeId = 3,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -209,7 +176,7 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         {
                             Id = 12,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "explorer shell:mydocuments",
+                            KeyValue = "taskmgr",
                             Name = "我的文档",
                             TypeId = 3,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -218,7 +185,7 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                         {
                             Id = 13,
                             CreatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            KeyValue = "explorer shell:downloads",
+                            KeyValue = "taskmgr",
                             Name = "下载",
                             TypeId = 3,
                             UpdatedTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)

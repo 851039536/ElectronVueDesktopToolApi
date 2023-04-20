@@ -27,12 +27,9 @@ public class CmdType : IEntity, IEntityTypeBuilder<CmdType>
 
     [Column("cmd_id",TypeName = "int(3)")]
     [Comment("cmd_id")]
-   
-    public int CmdId { get; set; }
+
 
     public ICollection<Cmd> Cmds { get; } = new List<Cmd>();
-
-
 
 
     public void Configure(EntityTypeBuilder<CmdType> entityBuilder,DbContext dbContext,Type dbContextLocator)

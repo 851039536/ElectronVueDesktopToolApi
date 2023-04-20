@@ -66,13 +66,12 @@
                 case 0:
                 //entityList = await GetFyAll(pageIndex,pageSize,isDesc);
                 entityList = await repository.Entities.OrderByDescending(e => e.Id)
-.Select(e => new Cmd() {
-    Id = e.Id,
-    Name = e.Name,
-    KeyValue = e.KeyValue,
-
-
-}).ToPagedListAsync(pageIndex,pageSize);
+                  .Select(e => new Cmd() {
+                      Id = e.Id,
+                      Name = e.Name,
+                      KeyValue = e.KeyValue,
+                      CmdType = e.CmdType,
+                  }).ToPagedListAsync(pageIndex,pageSize);
                 break;
             }
             return entityList;
