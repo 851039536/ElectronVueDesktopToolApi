@@ -5,24 +5,24 @@
 namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
 {
     /// <inheritdoc />
-    public partial class v100 : Migration
+    public partial class v002 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<string>(
-                name: "Type",
+            migrationBuilder.InsertData(
                 table: "cmd",
-                type: "longtext",
-                nullable: true);
+                columns: new[] { "Id", "key_value", "Name", "TypeId" },
+                values: new object[] { 3, "test", "百小僧", 1 });
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "Type",
-                table: "cmd");
+            migrationBuilder.DeleteData(
+                table: "cmd",
+                keyColumn: "Id",
+                keyValue: 3);
         }
     }
 }

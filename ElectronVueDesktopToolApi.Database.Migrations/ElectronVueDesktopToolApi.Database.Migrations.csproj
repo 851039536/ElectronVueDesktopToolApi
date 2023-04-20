@@ -11,8 +11,4 @@
 		<ProjectReference Include="..\ElectronVueDesktopToolApi.EntityFramework.Core\ElectronVueDesktopToolApi.EntityFramework.Core.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Migrations\" />
-	</ItemGroup>
-
 </Project>

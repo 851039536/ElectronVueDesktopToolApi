@@ -1,4 +1,6 @@
-﻿namespace ElectronVueDesktopToolApi.Application.Controller
+﻿using Furion.DatabaseAccessor.Extensions;
+
+namespace ElectronVueDesktopToolApi.Application.Controller
 {
 
     public class CmdController : IDynamicApiController
@@ -67,7 +69,7 @@
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        [Authorize]
+        //[Authorize]
         public async Task<Cmd> Insert(Cmd entity)
         {
             return await service.Insert(entity);
@@ -81,7 +83,10 @@
 
         public async Task<Cmd> Update(Cmd entity)
         {
-            var result = await entity.UpdateNowAsync();
+            //创建时间函数
+            entity.UpdatedTime = DateTime.Now;
+            //排除时间字段进行更新操作
+            var result = await entity.UpdateExcludeNowAsync(new[] { nameof(entity.CreatedTime) });
             return result.Entity;
         }
         /// <summary>
