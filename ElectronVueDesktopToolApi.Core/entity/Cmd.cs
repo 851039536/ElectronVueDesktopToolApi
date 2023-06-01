@@ -1,9 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System;
-
-namespace ElectronVueDesktopToolApi.EntityFramework.Core.entity;
+﻿namespace ElectronVueDesktopToolApi.EntityFramework.Core.entity;
 
 /// <summary>
 /// 文档 

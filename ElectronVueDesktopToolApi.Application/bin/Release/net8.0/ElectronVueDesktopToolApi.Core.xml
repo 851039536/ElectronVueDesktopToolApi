@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ElectronVueDesktopToolApi.Core</name>
+    </assembly>
+    <members>
+        <member name="T:ElectronVueDesktopToolApi.EntityFramework.Core.entity.Cmd">
+            <summary>
+            文档 
+            IEntity：实体基接口，是所有实体的基接口
+            框架中有约定，实体统一定义在 Furion.Core 层。
+            </summary>
+        </member>
+        <member name="P:ElectronVueDesktopToolApi.EntityFramework.Core.entity.Cmd.CreatedTime">
+            <summary>
+            创建时间  表示这个属性的值将由数据库在插入时自动生成。
+            </summary>
+        </member>
+        <member name="P:ElectronVueDesktopToolApi.EntityFramework.Core.entity.Cmd.UpdatedTime">
+            <summary>
+            添加时间  指定了UpdatedTime字段为计算列，也就是根据其他列的值自动计算。(更新myql出错)
+            </summary>
+        </member>
+        <member name="T:ElectronVueDesktopToolApi.EntityFramework.Core.entity.CmdType">
+            <summary>
+            文档 
+            IEntity：实体基接口，是所有实体的基接口
+            框架中有约定，实体统一定义在 Furion.Core 层。
+            </summary>
+        </member>
+    </members>
+</doc>

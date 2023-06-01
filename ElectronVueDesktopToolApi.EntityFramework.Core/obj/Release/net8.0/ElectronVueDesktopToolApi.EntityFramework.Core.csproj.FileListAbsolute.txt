@@ -1,0 +1,16 @@
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.deps.json
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.dll
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.pdb
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.Core.dll
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.Core.pdb
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.Core.xml
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.csproj.AssemblyReference.cache
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.AssemblyInfoInputs.cache
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.AssemblyInfo.cs
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.csproj.CoreCompileInputs.cache
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.csproj.CopyComplete
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.dll
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\refint\ElectronVueDesktopToolApi.EntityFramework.Core.dll
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.EntityFramework.Core.pdb
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.EntityFramework.Core\obj\Release\net8.0\ref\ElectronVueDesktopToolApi.EntityFramework.Core.dll

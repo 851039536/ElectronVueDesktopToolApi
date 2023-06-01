@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ElectronVueDesktopToolApi.Web.Entry.props" />
+</Project>

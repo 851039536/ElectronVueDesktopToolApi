@@ -28,5 +28,11 @@
             框架中有约定，实体统一定义在 Furion.Core 层。
             </summary>
         </member>
+        <member name="T:ElectronVueDesktopToolApi.Core.entity.UpDown">
+            <summary>
+            文档 
+            IEntity：实体基接口，是所有实体的基接口
+            </summary>
+        </member>
     </members>
 </doc>

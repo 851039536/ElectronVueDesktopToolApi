@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ElectronVueDesktopToolApi.Application</name>
+    </assembly>
+    <members>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.GetPaging(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="identity">所有:0 </param>
+            <param name="pageIndex">当前页码</param>
+            <param name="pageSize">每页记录条数</param>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.GetById(System.Int32)">
+            <summary>
+            主键查询
+            </summary>
+            <param name="id">文章id</param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.GetSum">
+            <summary>
+            总条数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.Insert(ElectronVueDesktopToolApi.EntityFramework.Core.entity.Cmd)">
+            <summary>
+            添加
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.Update(ElectronVueDesktopToolApi.EntityFramework.Core.entity.Cmd)">
+            <summary>
+            更新
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.CmdController.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">文档Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:ElectronVueDesktopToolApi.Application.Controller.Service.CmdService">
+            <summary>
+            文档路由
+            </summary>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.CmdService.#ctor(Furion.DatabaseAccessor.IRepository{ElectronVueDesktopToolApi.EntityFramework.Core.entity.Cmd})">
+            <summary>
+            SoftwareService
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.CmdService.GetByIdAsync(System.Int32)">
+            <summary>
+            主键查询
+            </summary>
+            <param name="id">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.CmdService.Insert(ElectronVueDesktopToolApi.EntityFramework.Core.entity.Cmd)">
+            <summary>
+            添加
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.CmdService.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.CmdService.GetPagingAsync(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="identity">所有:0 </param>
+            <param name="pageIndex">当前页码</param>
+            <param name="pageSize">每页记录条数</param>
+        </member>
+        <member name="T:ElectronVueDesktopToolApi.Application.SystemAppService">
+            <summary>
+            系统服务接口
+            </summary>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.SystemAppService.GetDescription2">
+            <summary>
+            获取系统描述
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

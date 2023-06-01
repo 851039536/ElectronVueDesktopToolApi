@@ -1,0 +1,13 @@
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.Core.deps.json
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.Core.dll
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.Core.pdb
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\bin\Release\net8.0\ElectronVueDesktopToolApi.Core.xml
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.Core.csproj.AssemblyReference.cache
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.Core.AssemblyInfoInputs.cache
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.Core.AssemblyInfo.cs
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.Core.csproj.CoreCompileInputs.cache
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.Core.dll
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\obj\Release\net8.0\refint\ElectronVueDesktopToolApi.Core.dll
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\obj\Release\net8.0\ElectronVueDesktopToolApi.Core.pdb
+D:\sw\netCore\ElectronVueDesktopToolApi\ElectronVueDesktopToolApi.Core\obj\Release\net8.0\ref\ElectronVueDesktopToolApi.Core.dll

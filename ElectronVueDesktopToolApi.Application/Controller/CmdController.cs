@@ -1,17 +1,15 @@
-﻿using Furion.DatabaseAccessor.Extensions;
-
-namespace ElectronVueDesktopToolApi.Application.Controller
+﻿namespace ElectronVueDesktopToolApi.Application.Controller
 {
 
     public class CmdController : IDynamicApiController
     {
-        private readonly IRepository<Cmd> repository;
-        private readonly CmdService service;
+        private readonly IRepository<Cmd> _repository;
+        private readonly CmdService _service;
 
         public CmdController(IRepository<Cmd> repository)
         {
-            this.repository = repository;
-            service = new CmdService(this.repository);
+            this._repository = repository;
+            _service = new CmdService(this._repository);
         }
 
         #region 分页查询
@@ -24,7 +22,7 @@ namespace ElectronVueDesktopToolApi.Application.Controller
 
         public async Task<PagedList<Cmd>> GetPaging(int identity = 0,int pageIndex = 1,int pageSize = 10)
         {
-            return await service.GetPagingAsync(identity,pageIndex,pageSize);
+            return await _service.GetPagingAsync(identity,pageIndex,pageSize);
         }
 
         #endregion
@@ -37,7 +35,7 @@ namespace ElectronVueDesktopToolApi.Application.Controller
         /// <returns></returns>
         public async Task<Cmd> GetById(int id)
         {
-            return await service.GetByIdAsync(id);
+            return await _service.GetByIdAsync(id);
         }
         #endregion
 
@@ -48,7 +46,7 @@ namespace ElectronVueDesktopToolApi.Application.Controller
         /// <returns></returns>
         public async Task<int> GetSum()
         {
-            return await service.GetSum();
+            return await _service.GetSum();
         }
         #endregion
         public string GetToken(int id,string account)
@@ -72,7 +70,7 @@ namespace ElectronVueDesktopToolApi.Application.Controller
         //[Authorize]
         public async Task<Cmd> Insert(Cmd entity)
         {
-            return await service.Insert(entity);
+            return await _service.Insert(entity);
         }
 
         /// <summary>
@@ -96,7 +94,7 @@ namespace ElectronVueDesktopToolApi.Application.Controller
         /// <returns></returns>
         public async Task<Cmd> Delete(int id)
         {
-            return await service.Delete(id);
+            return await _service.Delete(id);
         }
 
     }

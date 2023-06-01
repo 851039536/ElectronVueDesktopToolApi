@@ -86,6 +86,79 @@
             <param name="pageIndex">当前页码</param>
             <param name="pageSize">每页记录条数</param>
         </member>
+        <member name="T:ElectronVueDesktopToolApi.Application.Controller.Service.UpDownService">
+            <summary>
+            文档路由
+            </summary>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.UpDownService.#ctor(Furion.DatabaseAccessor.IRepository{ElectronVueDesktopToolApi.Core.entity.UpDown})">
+            <summary>
+            SoftwareService
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.UpDownService.GetByIdAsync(System.Int32)">
+            <summary>
+            主键查询
+            </summary>
+            <param name="id">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.UpDownService.Insert(ElectronVueDesktopToolApi.Core.entity.UpDown)">
+            <summary>
+            添加
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.UpDownService.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.Service.UpDownService.GetPagingAsync(System.Int32,System.Int32)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="pageIndex">当前页码</param>
+            <param name="pageSize">每页记录条数</param>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.UpDownController.GetPaging(System.Int32,System.Int32)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="pageIndex">当前页码</param>
+            <param name="pageSize">每页记录条数</param>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.UpDownController.GetById(System.Int32)">
+            <summary>
+            主键查询
+            </summary>
+            <param name="id">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.UpDownController.GetSum">
+            <summary>
+            总条数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.UpDownController.Insert(ElectronVueDesktopToolApi.Core.entity.UpDown)">
+            <summary>
+            添加
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ElectronVueDesktopToolApi.Application.Controller.UpDownController.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">主键</param>
+            <returns></returns>
+        </member>
         <member name="T:ElectronVueDesktopToolApi.Application.SystemAppService">
             <summary>
             系统服务接口

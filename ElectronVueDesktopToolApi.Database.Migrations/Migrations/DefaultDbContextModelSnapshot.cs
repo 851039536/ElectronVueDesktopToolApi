@@ -19,6 +19,55 @@ namespace ElectronVueDesktopToolApi.Database.Migrations.Migrations
                 .HasAnnotation("ProductVersion", "8.0.0-preview.3.23174.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("ElectronVueDesktopToolApi.Core.entity.UpDown", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int(4)")
+                        .HasColumnOrder(0)
+                        .HasComment("主键");
+
+                    b.Property<string>("DownZipPath")
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("down_zip_path")
+                        .HasColumnOrder(3)
+                        .HasComment("下载到本地路径");
+
+                    b.Property<string>("UnZipPath")
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("un_zip_path")
+                        .HasColumnOrder(4)
+                        .HasComment("解压路径");
+
+                    b.Property<string>("UpZipPath")
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("up_zip_path")
+                        .HasColumnOrder(2)
+                        .HasComment("上传路径");
+
+                    b.Property<string>("ZipName")
+                        .HasColumnType("varchar(40)")
+                        .HasColumnOrder(1)
+                        .HasComment("zip名称");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("up_down", t =>
+                        {
+                            t.HasComment("上传下载实体");
+                        });
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DownZipPath = "C:\\\\Users\\\\ch190006\\\\Desktop\\\\Test",
+                            UnZipPath = "C:\\\\Users\\\\ch190006\\\\Desktop\\\\Test",
+                            UpZipPath = "C:\\\\Users\\\\ch190006\\\\Desktop\\\\Test\\\\test1\\\\test2.zip",
+                            ZipName = "test"
+                        });
+                });
+
             modelBuilder.Entity("ElectronVueDesktopToolApi.EntityFramework.Core.entity.Cmd", b =>
                 {
                     b.Property<int>("Id")
